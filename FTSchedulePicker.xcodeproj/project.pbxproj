@@ -1,0 +1,521 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FB5E09D11C88FC6600779264 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FB5E09D01C88FC6600779264 /* main.m */; };
+		FB5E09D41C88FC6600779264 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FB5E09D31C88FC6600779264 /* AppDelegate.m */; };
+		FB5E09D71C88FC6600779264 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB5E09D61C88FC6600779264 /* ViewController.m */; };
+		FB5E09DA1C88FC6600779264 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB5E09D81C88FC6600779264 /* Main.storyboard */; };
+		FB5E09DC1C88FC6600779264 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB5E09DB1C88FC6600779264 /* Assets.xcassets */; };
+		FB5E09DF1C88FC6600779264 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB5E09DD1C88FC6600779264 /* LaunchScreen.storyboard */; };
+		FB5E09EA1C88FC6600779264 /* FTSchedulePickerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FB5E09E91C88FC6600779264 /* FTSchedulePickerTests.m */; };
+		FB5E09F51C88FC6600779264 /* FTSchedulePickerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = FB5E09F41C88FC6600779264 /* FTSchedulePickerUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FB5E09E61C88FC6600779264 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FB5E09C41C88FC6600779264 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FB5E09CB1C88FC6600779264;
+			remoteInfo = FTSchedulePicker;
+		};
+		FB5E09F11C88FC6600779264 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FB5E09C41C88FC6600779264 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FB5E09CB1C88FC6600779264;
+			remoteInfo = FTSchedulePicker;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FB5E09CC1C88FC6600779264 /* FTSchedulePicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FTSchedulePicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB5E09D01C88FC6600779264 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FB5E09D21C88FC6600779264 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		FB5E09D31C88FC6600779264 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		FB5E09D51C88FC6600779264 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		FB5E09D61C88FC6600779264 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		FB5E09D91C88FC6600779264 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FB5E09DB1C88FC6600779264 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FB5E09DE1C88FC6600779264 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FB5E09E01C88FC6600779264 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FB5E09E51C88FC6600779264 /* FTSchedulePickerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FTSchedulePickerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB5E09E91C88FC6600779264 /* FTSchedulePickerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FTSchedulePickerTests.m; sourceTree = "<group>"; };
+		FB5E09EB1C88FC6600779264 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FB5E09F01C88FC6600779264 /* FTSchedulePickerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FTSchedulePickerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB5E09F41C88FC6600779264 /* FTSchedulePickerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FTSchedulePickerUITests.m; sourceTree = "<group>"; };
+		FB5E09F61C88FC6600779264 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FB5E09C91C88FC6600779264 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB5E09E21C88FC6600779264 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB5E09ED1C88FC6600779264 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FB5E09C31C88FC6600779264 = {
+			isa = PBXGroup;
+			children = (
+				FB5E09CE1C88FC6600779264 /* FTSchedulePicker */,
+				FB5E09E81C88FC6600779264 /* FTSchedulePickerTests */,
+				FB5E09F31C88FC6600779264 /* FTSchedulePickerUITests */,
+				FB5E09CD1C88FC6600779264 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FB5E09CD1C88FC6600779264 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FB5E09CC1C88FC6600779264 /* FTSchedulePicker.app */,
+				FB5E09E51C88FC6600779264 /* FTSchedulePickerTests.xctest */,
+				FB5E09F01C88FC6600779264 /* FTSchedulePickerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FB5E09CE1C88FC6600779264 /* FTSchedulePicker */ = {
+			isa = PBXGroup;
+			children = (
+				FB5E09D21C88FC6600779264 /* AppDelegate.h */,
+				FB5E09D31C88FC6600779264 /* AppDelegate.m */,
+				FB5E09D51C88FC6600779264 /* ViewController.h */,
+				FB5E09D61C88FC6600779264 /* ViewController.m */,
+				FB5E09D81C88FC6600779264 /* Main.storyboard */,
+				FB5E09DB1C88FC6600779264 /* Assets.xcassets */,
+				FB5E09DD1C88FC6600779264 /* LaunchScreen.storyboard */,
+				FB5E09E01C88FC6600779264 /* Info.plist */,
+				FB5E09CF1C88FC6600779264 /* Supporting Files */,
+			);
+			path = FTSchedulePicker;
+			sourceTree = "<group>";
+		};
+		FB5E09CF1C88FC6600779264 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FB5E09D01C88FC6600779264 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FB5E09E81C88FC6600779264 /* FTSchedulePickerTests */ = {
+			isa = PBXGroup;
+			children = (
+				FB5E09E91C88FC6600779264 /* FTSchedulePickerTests.m */,
+				FB5E09EB1C88FC6600779264 /* Info.plist */,
+			);
+			path = FTSchedulePickerTests;
+			sourceTree = "<group>";
+		};
+		FB5E09F31C88FC6600779264 /* FTSchedulePickerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FB5E09F41C88FC6600779264 /* FTSchedulePickerUITests.m */,
+				FB5E09F61C88FC6600779264 /* Info.plist */,
+			);
+			path = FTSchedulePickerUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FB5E09CB1C88FC6600779264 /* FTSchedulePicker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FB5E09F91C88FC6600779264 /* Build configuration list for PBXNativeTarget "FTSchedulePicker" */;
+			buildPhases = (
+				FB5E09C81C88FC6600779264 /* Sources */,
+				FB5E09C91C88FC6600779264 /* Frameworks */,
+				FB5E09CA1C88FC6600779264 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FTSchedulePicker;
+			productName = FTSchedulePicker;
+			productReference = FB5E09CC1C88FC6600779264 /* FTSchedulePicker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FB5E09E41C88FC6600779264 /* FTSchedulePickerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FB5E09FC1C88FC6600779264 /* Build configuration list for PBXNativeTarget "FTSchedulePickerTests" */;
+			buildPhases = (
+				FB5E09E11C88FC6600779264 /* Sources */,
+				FB5E09E21C88FC6600779264 /* Frameworks */,
+				FB5E09E31C88FC6600779264 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FB5E09E71C88FC6600779264 /* PBXTargetDependency */,
+			);
+			name = FTSchedulePickerTests;
+			productName = FTSchedulePickerTests;
+			productReference = FB5E09E51C88FC6600779264 /* FTSchedulePickerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FB5E09EF1C88FC6600779264 /* FTSchedulePickerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FB5E09FF1C88FC6600779264 /* Build configuration list for PBXNativeTarget "FTSchedulePickerUITests" */;
+			buildPhases = (
+				FB5E09EC1C88FC6600779264 /* Sources */,
+				FB5E09ED1C88FC6600779264 /* Frameworks */,
+				FB5E09EE1C88FC6600779264 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FB5E09F21C88FC6600779264 /* PBXTargetDependency */,
+			);
+			name = FTSchedulePickerUITests;
+			productName = FTSchedulePickerUITests;
+			productReference = FB5E09F01C88FC6600779264 /* FTSchedulePickerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FB5E09C41C88FC6600779264 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Fabio Takahara";
+				TargetAttributes = {
+					FB5E09CB1C88FC6600779264 = {
+						CreatedOnToolsVersion = 7.0;
+					};
+					FB5E09E41C88FC6600779264 = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = FB5E09CB1C88FC6600779264;
+					};
+					FB5E09EF1C88FC6600779264 = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = FB5E09CB1C88FC6600779264;
+					};
+				};
+			};
+			buildConfigurationList = FB5E09C71C88FC6600779264 /* Build configuration list for PBXProject "FTSchedulePicker" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FB5E09C31C88FC6600779264;
+			productRefGroup = FB5E09CD1C88FC6600779264 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FB5E09CB1C88FC6600779264 /* FTSchedulePicker */,
+				FB5E09E41C88FC6600779264 /* FTSchedulePickerTests */,
+				FB5E09EF1C88FC6600779264 /* FTSchedulePickerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FB5E09CA1C88FC6600779264 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB5E09DF1C88FC6600779264 /* LaunchScreen.storyboard in Resources */,
+				FB5E09DC1C88FC6600779264 /* Assets.xcassets in Resources */,
+				FB5E09DA1C88FC6600779264 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB5E09E31C88FC6600779264 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB5E09EE1C88FC6600779264 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FB5E09C81C88FC6600779264 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB5E09D71C88FC6600779264 /* ViewController.m in Sources */,
+				FB5E09D41C88FC6600779264 /* AppDelegate.m in Sources */,
+				FB5E09D11C88FC6600779264 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB5E09E11C88FC6600779264 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB5E09EA1C88FC6600779264 /* FTSchedulePickerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB5E09EC1C88FC6600779264 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB5E09F51C88FC6600779264 /* FTSchedulePickerUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FB5E09E71C88FC6600779264 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FB5E09CB1C88FC6600779264 /* FTSchedulePicker */;
+			targetProxy = FB5E09E61C88FC6600779264 /* PBXContainerItemProxy */;
+		};
+		FB5E09F21C88FC6600779264 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FB5E09CB1C88FC6600779264 /* FTSchedulePicker */;
+			targetProxy = FB5E09F11C88FC6600779264 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FB5E09D81C88FC6600779264 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FB5E09D91C88FC6600779264 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FB5E09DD1C88FC6600779264 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FB5E09DE1C88FC6600779264 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FB5E09F71C88FC6600779264 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FB5E09F81C88FC6600779264 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FB5E09FA1C88FC6600779264 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = FTSchedulePicker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = FT.FTSchedulePicker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		FB5E09FB1C88FC6600779264 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = FTSchedulePicker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = FT.FTSchedulePicker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		FB5E09FD1C88FC6600779264 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = FTSchedulePickerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = FT.FTSchedulePickerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FTSchedulePicker.app/FTSchedulePicker";
+			};
+			name = Debug;
+		};
+		FB5E09FE1C88FC6600779264 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = FTSchedulePickerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = FT.FTSchedulePickerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FTSchedulePicker.app/FTSchedulePicker";
+			};
+			name = Release;
+		};
+		FB5E0A001C88FC6600779264 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = FTSchedulePickerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = FT.FTSchedulePickerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = FTSchedulePicker;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		FB5E0A011C88FC6600779264 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = FTSchedulePickerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = FT.FTSchedulePickerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = FTSchedulePicker;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FB5E09C71C88FC6600779264 /* Build configuration list for PBXProject "FTSchedulePicker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB5E09F71C88FC6600779264 /* Debug */,
+				FB5E09F81C88FC6600779264 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FB5E09F91C88FC6600779264 /* Build configuration list for PBXNativeTarget "FTSchedulePicker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB5E09FA1C88FC6600779264 /* Debug */,
+				FB5E09FB1C88FC6600779264 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		FB5E09FC1C88FC6600779264 /* Build configuration list for PBXNativeTarget "FTSchedulePickerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB5E09FD1C88FC6600779264 /* Debug */,
+				FB5E09FE1C88FC6600779264 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		FB5E09FF1C88FC6600779264 /* Build configuration list for PBXNativeTarget "FTSchedulePickerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB5E0A001C88FC6600779264 /* Debug */,
+				FB5E0A011C88FC6600779264 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FB5E09C41C88FC6600779264 /* Project object */;
+}
