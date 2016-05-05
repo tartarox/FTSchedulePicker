@@ -15,6 +15,10 @@
 		FB5E09DF1C88FC6600779264 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB5E09DD1C88FC6600779264 /* LaunchScreen.storyboard */; };
 		FB5E09EA1C88FC6600779264 /* FTSchedulePickerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FB5E09E91C88FC6600779264 /* FTSchedulePickerTests.m */; };
 		FB5E09F51C88FC6600779264 /* FTSchedulePickerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = FB5E09F41C88FC6600779264 /* FTSchedulePickerUITests.m */; };
+		FB5E0A041C88FCA900779264 /* FTSchedulePickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = FB5E0A031C88FCA900779264 /* FTSchedulePickerView.m */; settings = {ASSET_TAGS = (); }; };
+		FB5E0A071C88FE8E00779264 /* FTSchedulePickerObject.m in Sources */ = {isa = PBXBuildFile; fileRef = FB5E0A061C88FE8E00779264 /* FTSchedulePickerObject.m */; settings = {ASSET_TAGS = (); }; };
+		FB5E0A0A1C88FE8E00779264 /* FTPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = FB5E0A091C88FE8E00779264 /* FTPickerView.m */; settings = {ASSET_TAGS = (); }; };
+		FB5E0A0F1C8908E300779264 /* JTMaterialSwitch.m in Sources */ = {isa = PBXBuildFile; fileRef = FB5E0A0E1C8908E300779264 /* JTMaterialSwitch.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +55,14 @@
 		FB5E09F01C88FC6600779264 /* FTSchedulePickerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FTSchedulePickerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB5E09F41C88FC6600779264 /* FTSchedulePickerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FTSchedulePickerUITests.m; sourceTree = "<group>"; };
 		FB5E09F61C88FC6600779264 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FB5E0A021C88FCA900779264 /* FTSchedulePickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTSchedulePickerView.h; sourceTree = "<group>"; };
+		FB5E0A031C88FCA900779264 /* FTSchedulePickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTSchedulePickerView.m; sourceTree = "<group>"; };
+		FB5E0A051C88FE8E00779264 /* FTSchedulePickerObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTSchedulePickerObject.h; sourceTree = "<group>"; };
+		FB5E0A061C88FE8E00779264 /* FTSchedulePickerObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTSchedulePickerObject.m; sourceTree = "<group>"; };
+		FB5E0A081C88FE8E00779264 /* FTPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTPickerView.h; sourceTree = "<group>"; };
+		FB5E0A091C88FE8E00779264 /* FTPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTPickerView.m; sourceTree = "<group>"; };
+		FB5E0A0D1C8908E300779264 /* JTMaterialSwitch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTMaterialSwitch.h; sourceTree = "<group>"; };
+		FB5E0A0E1C8908E300779264 /* JTMaterialSwitch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTMaterialSwitch.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +117,7 @@
 				FB5E09D31C88FC6600779264 /* AppDelegate.m */,
 				FB5E09D51C88FC6600779264 /* ViewController.h */,
 				FB5E09D61C88FC6600779264 /* ViewController.m */,
+				FB5E0A0B1C8904BB00779264 /* FTSchedulePicker */,
 				FB5E09D81C88FC6600779264 /* Main.storyboard */,
 				FB5E09DB1C88FC6600779264 /* Assets.xcassets */,
 				FB5E09DD1C88FC6600779264 /* LaunchScreen.storyboard */,
@@ -138,6 +151,29 @@
 				FB5E09F61C88FC6600779264 /* Info.plist */,
 			);
 			path = FTSchedulePickerUITests;
+			sourceTree = "<group>";
+		};
+		FB5E0A0B1C8904BB00779264 /* FTSchedulePicker */ = {
+			isa = PBXGroup;
+			children = (
+				FB5E0A0C1C8908B500779264 /* JTMaterialSwitch */,
+				FB5E0A051C88FE8E00779264 /* FTSchedulePickerObject.h */,
+				FB5E0A061C88FE8E00779264 /* FTSchedulePickerObject.m */,
+				FB5E0A021C88FCA900779264 /* FTSchedulePickerView.h */,
+				FB5E0A031C88FCA900779264 /* FTSchedulePickerView.m */,
+				FB5E0A081C88FE8E00779264 /* FTPickerView.h */,
+				FB5E0A091C88FE8E00779264 /* FTPickerView.m */,
+			);
+			name = FTSchedulePicker;
+			sourceTree = "<group>";
+		};
+		FB5E0A0C1C8908B500779264 /* JTMaterialSwitch */ = {
+			isa = PBXGroup;
+			children = (
+				FB5E0A0D1C8908E300779264 /* JTMaterialSwitch.h */,
+				FB5E0A0E1C8908E300779264 /* JTMaterialSwitch.m */,
+			);
+			name = JTMaterialSwitch;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -271,7 +307,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				FB5E09D71C88FC6600779264 /* ViewController.m in Sources */,
+				FB5E0A041C88FCA900779264 /* FTSchedulePickerView.m in Sources */,
+				FB5E0A0A1C88FE8E00779264 /* FTPickerView.m in Sources */,
 				FB5E09D41C88FC6600779264 /* AppDelegate.m in Sources */,
+				FB5E0A0F1C8908E300779264 /* JTMaterialSwitch.m in Sources */,
+				FB5E0A071C88FE8E00779264 /* FTSchedulePickerObject.m in Sources */,
 				FB5E09D11C88FC6600779264 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

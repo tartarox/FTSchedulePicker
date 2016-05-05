@@ -16,7 +16,20 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    
+    NSMutableArray *pickerObjectsArray = @[].mutableCopy;
+    
+    for (int i = 0; i < 5; i++) {
+        
+        FTSchedulePickerObject *pickerObject = [[FTSchedulePickerObject alloc]init];
+        pickerObject.pickerTime = [NSDate date];
+        pickerObject.enable = NO;
+        [pickerObjectsArray addObject:pickerObject];
+    }
+    
+    FTSchedulePickerView *schedulePickerView = [[FTSchedulePickerView alloc]initWithFrame:CGRectMake(0, 40, self.view.frame.size.width, self.view.frame.size.height - 50) andObjects:pickerObjectsArray];
+    [self.view addSubview:schedulePickerView];
 }
 
 - (void)didReceiveMemoryWarning {

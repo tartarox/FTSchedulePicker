@@ -1,17 +1,13 @@
 //
-//  ViewController.h
+//  FTSchedulePickerObject.m
 //  FTSchedulePicker
 //
 //  Created by Fabio Takahara on 03/03/16.
 //  Copyright © 2016 Fabio Takahara. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
-#import "FTSchedulePickerView.h"
+#import "FTSchedulePickerObject.h"
 
-@interface ViewController : UIViewController {
-    
-}
+@implementation FTSchedulePickerObject
 
 @end
-
