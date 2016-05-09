@@ -30,7 +30,8 @@
         timePicker.datePickerMode = UIDatePickerModeTime;
         timePicker.date = pickerObject.pickerTime;
         [timePicker addTarget:self action:@selector(timeIsChanged:) forControlEvents:UIControlEventValueChanged];
-        //timePicker.timeZone = [NSTimeZone localTimeZone];
+        NSLocale *locale = [[NSLocale alloc] initWithLocaleIdentifier:@"da_DK"];
+        [timePicker setLocale:locale];
         [_timeTextField setInputView:timePicker];
         
         [self addSubview:_timeTextField];
@@ -185,6 +186,7 @@
     
     NSDateFormatter *datePickerFormat = [[NSDateFormatter alloc] init];
     [datePickerFormat setDateFormat:@"HH mm"];
+    
     NSString *datePickerString = [datePickerFormat stringFromDate:timePicker.date];
     NSArray *timeStringArray = [datePickerString componentsSeparatedByString:@" "];
 

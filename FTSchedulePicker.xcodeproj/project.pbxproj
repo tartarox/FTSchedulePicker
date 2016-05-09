@@ -15,10 +15,10 @@
 		FB5E09DF1C88FC6600779264 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB5E09DD1C88FC6600779264 /* LaunchScreen.storyboard */; };
 		FB5E09EA1C88FC6600779264 /* FTSchedulePickerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FB5E09E91C88FC6600779264 /* FTSchedulePickerTests.m */; };
 		FB5E09F51C88FC6600779264 /* FTSchedulePickerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = FB5E09F41C88FC6600779264 /* FTSchedulePickerUITests.m */; };
-		FB5E0A041C88FCA900779264 /* FTSchedulePickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = FB5E0A031C88FCA900779264 /* FTSchedulePickerView.m */; settings = {ASSET_TAGS = (); }; };
-		FB5E0A071C88FE8E00779264 /* FTSchedulePickerObject.m in Sources */ = {isa = PBXBuildFile; fileRef = FB5E0A061C88FE8E00779264 /* FTSchedulePickerObject.m */; settings = {ASSET_TAGS = (); }; };
-		FB5E0A0A1C88FE8E00779264 /* FTPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = FB5E0A091C88FE8E00779264 /* FTPickerView.m */; settings = {ASSET_TAGS = (); }; };
-		FB5E0A0F1C8908E300779264 /* JTMaterialSwitch.m in Sources */ = {isa = PBXBuildFile; fileRef = FB5E0A0E1C8908E300779264 /* JTMaterialSwitch.m */; settings = {ASSET_TAGS = (); }; };
+		FB5E0A041C88FCA900779264 /* FTSchedulePickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = FB5E0A031C88FCA900779264 /* FTSchedulePickerView.m */; };
+		FB5E0A071C88FE8E00779264 /* FTSchedulePickerObject.m in Sources */ = {isa = PBXBuildFile; fileRef = FB5E0A061C88FE8E00779264 /* FTSchedulePickerObject.m */; };
+		FB5E0A0A1C88FE8E00779264 /* FTPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = FB5E0A091C88FE8E00779264 /* FTPickerView.m */; };
+		FB5E0A0F1C8908E300779264 /* JTMaterialSwitch.m in Sources */ = {isa = PBXBuildFile; fileRef = FB5E0A0E1C8908E300779264 /* JTMaterialSwitch.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -243,6 +243,7 @@
 				TargetAttributes = {
 					FB5E09CB1C88FC6600779264 = {
 						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = ULM9Z8MVQ4;
 					};
 					FB5E09E41C88FC6600779264 = {
 						CreatedOnToolsVersion = 7.0;
@@ -453,6 +454,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = FTSchedulePicker/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = FT.FTSchedulePicker;
@@ -464,6 +466,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = FTSchedulePicker/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = FT.FTSchedulePicker;
@@ -538,6 +541,7 @@
 				FB5E09FB1C88FC6600779264 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FB5E09FC1C88FC6600779264 /* Build configuration list for PBXNativeTarget "FTSchedulePickerTests" */ = {
 			isa = XCConfigurationList;
@@ -546,6 +550,7 @@
 				FB5E09FE1C88FC6600779264 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FB5E09FF1C88FC6600779264 /* Build configuration list for PBXNativeTarget "FTSchedulePickerUITests" */ = {
 			isa = XCConfigurationList;
@@ -554,6 +559,7 @@
 				FB5E0A011C88FC6600779264 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

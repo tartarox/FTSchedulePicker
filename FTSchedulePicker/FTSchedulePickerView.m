@@ -65,7 +65,6 @@
         }
         [_pickerViewArray replaceObjectAtIndex:i withObject:ftPickerView];
     }
-    
     [self doneAction];
 }
 
@@ -110,6 +109,7 @@
     
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
     [dateFormatter setDateFormat:@"hh:mm"];
+    [dateFormatter setTimeZone:[NSTimeZone timeZoneWithAbbreviation:@"UTC"]];
     
     for (FTPickerView *ftPickerView in _pickerViewArray) {
         
