@@ -18,7 +18,7 @@
 - (void)doneAction;
 @end
 
-@interface FTPickerView : UIView <UITextFieldDelegate>
+@interface FTPickerView : UIView <UITextFieldDelegate, UIGestureRecognizerDelegate>
 
 - (id)initWithFrame:(CGRect)frame andObject:(FTSchedulePickerObject*)pickerObject;
 - (id)initWithFrame:(CGRect)frame andAddString:(NSString*)addString;

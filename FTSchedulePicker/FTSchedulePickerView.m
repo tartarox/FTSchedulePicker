@@ -91,6 +91,7 @@
     
     [UIView animateWithDuration:.6 animations:^{
         pickerView.frame = CGRectMake(10, (70 * (_pickerViewArray.count - 1)) + 5, self.frame.size.width - 20, 60);
+        pickerView.startRect = pickerView.frame;
     }completion:^(BOOL finished) {
         [pickerView.timeTextField becomeFirstResponder];
     }];

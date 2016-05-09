@@ -62,6 +62,7 @@
         [self addSubview:materialSwitch];
         
         UIPanGestureRecognizer *panGestureRecognizer = [[UIPanGestureRecognizer alloc]initWithTarget:self action:@selector(handlePan:)];
+        panGestureRecognizer.delegate = self;
         [self addGestureRecognizer:panGestureRecognizer];
     }
     return self;
@@ -90,6 +91,11 @@
     return self;
 }
 
+-(BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldRecognizeSimultaneouslyWithGestureRecognizer:(UIGestureRecognizer *)otherGestureRecognizer
+{
+    return YES;
+}
+
 - (void)handlePan:(UIPanGestureRecognizer*)recognizer {
     
     CGPoint translation = [recognizer translationInView:self];
@@ -103,14 +109,15 @@
         btFrame.origin.x = translation.x + 10;
         self.frame = btFrame;
         self.alpha = 1 - (currentTransition / -200);
+        
     }
     
     if (recognizer.state == UIGestureRecognizerStateEnded) {
         
-        
         if (translation.x > -120 && translation.x < 120) {
             
             [UIView animateWithDuration:0.3 animations:^{
+                
                 self.frame = _startRect;
                 self.alpha = 1;
             }];
