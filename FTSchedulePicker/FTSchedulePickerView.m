@@ -15,7 +15,7 @@
     self = [super initWithFrame:frame];
     if (self) {
         
-        self.contentSize = CGSizeMake(0, 1000);
+        self.contentSize = CGSizeMake(0, (_pickerViewArray.count * 70) + 5);
         _pickerViewArray = @[].mutableCopy;
         
         for (int i = 0; i < pickerObjects.count + 1; i++) {
@@ -107,6 +107,7 @@
 - (void)doneAction {
     
     NSMutableArray *pickerArray = @[].mutableCopy;
+    self.contentSize = CGSizeMake(0, (_pickerViewArray.count * 70) + 5);
     
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
     [dateFormatter setDateFormat:@"hh:mm"];
