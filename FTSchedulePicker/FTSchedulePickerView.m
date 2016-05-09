@@ -65,6 +65,8 @@
         }
         [_pickerViewArray replaceObjectAtIndex:i withObject:ftPickerView];
     }
+    
+    [self doneAction];
 }
 
 - (void)addNewSchedule {
