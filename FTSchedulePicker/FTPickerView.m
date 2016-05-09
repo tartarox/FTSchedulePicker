@@ -16,6 +16,7 @@
     if (self) {
         
         _startRect = frame;
+        _enable = pickerObject.enable;
         
         self.backgroundColor = [UIColor whiteColor];
         
@@ -35,7 +36,7 @@
         [self addSubview:_timeTextField];
         
         
-        if (pickerObject.enable == YES) {
+        if (_enable == YES) {
             
             self.layer.shadowColor = [UIColor colorWithRed:52./255. green:109./255. blue:241./255. alpha:1.0].CGColor;
             self.layer.shadowOpacity = 1;
@@ -55,7 +56,7 @@
         
         JTMaterialSwitch *materialSwitch = [[JTMaterialSwitch alloc] initWithSize:JTMaterialSwitchSizeNormal style:JTMaterialSwitchStyleDefault state:JTMaterialSwitchStateOn];
         materialSwitch.frame = CGRectMake(frame.size.width - 60, 15, 50, 30);
-        materialSwitch.isOn = pickerObject.enable;
+        materialSwitch.isOn = _enable;
         [materialSwitch addTarget:self action:@selector(stateChanged:) forControlEvents:UIControlEventValueChanged];
         [self addSubview:materialSwitch];
         
@@ -142,21 +143,34 @@
         
         if (sender.isOn) {
             
+            _enable = YES;
+            
             [UIView transitionWithView:self duration:.3 options:UIViewAnimationOptionTransitionCrossDissolve animations:^{
                 
-                _timeTextField.textColor = [UIColor colorWithRed:52./255. green:109./255. blue:241./255. alpha:.6];
-                self.layer.shadowColor = [UIColor colorWithRed:52./255. green:109./255. blue:241./255. alpha:1.0].CGColor;
-                self.layer.shadowOpacity = 1;
+                dispatch_async(dispatch_get_main_queue(), ^{
+                    _timeTextField.textColor = [UIColor colorWithRed:52./255. green:109./255. blue:241./255. alpha:.6];
+                    self.layer.shadowColor = [UIColor colorWithRed:52./255. green:109./255. blue:241./255. alpha:1.0].CGColor;
+                    self.layer.shadowOpacity = 1;
+                });
+                
+                [self donePressed];
                 
             } completion:nil];
             
         }else {
             
+            _enable = NO;
+            
             [UIView transitionWithView:self duration:.3 options:UIViewAnimationOptionTransitionCrossDissolve animations:^{
                 
-                _timeTextField.textColor = [UIColor lightGrayColor];
-                self.layer.shadowColor = [UIColor blackColor].CGColor;
-                self.layer.shadowOpacity = 0.4;
+                dispatch_async(dispatch_get_main_queue(), ^{
+                    
+                    _timeTextField.textColor = [UIColor lightGrayColor];
+                    self.layer.shadowColor = [UIColor blackColor].CGColor;
+                    self.layer.shadowOpacity = 0.4;
+                });
+                
+                [self donePressed];
                 
             } completion:nil];
         }

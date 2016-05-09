@@ -29,7 +29,20 @@
     }
     
     FTSchedulePickerView *schedulePickerView = [[FTSchedulePickerView alloc]initWithFrame:CGRectMake(0, 40, self.view.frame.size.width, self.view.frame.size.height - 50) andObjects:pickerObjectsArray];
+    schedulePickerView.customDelegate = self;
     [self.view addSubview:schedulePickerView];
+}
+
+#pragma mark - FTSChedulePickerView Delegate
+
+- (void)getPickerViewArray:(NSMutableArray*)pickerViewArray {
+    
+    for (FTSchedulePickerObject *pickerObject in pickerViewArray) {
+        
+        NSLog(@"horário %@", pickerObject.pickerTime);
+        NSLog(@"disponível %i", pickerObject.enable);
+
+    }
 }
 
 - (void)didReceiveMemoryWarning {

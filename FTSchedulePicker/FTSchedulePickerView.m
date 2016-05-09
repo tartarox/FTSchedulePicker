@@ -104,8 +104,25 @@
 
 - (void)doneAction {
     
-    NSLog(@"pcikerArray %@", _pickerViewArray);
-    NSLog(@"count %lu", (unsigned long)_pickerViewArray.count);
+    NSMutableArray *pickerArray = @[].mutableCopy;
+    
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    [dateFormatter setDateFormat:@"hh:mm"];
+    
+    for (FTPickerView *ftPickerView in _pickerViewArray) {
+        
+        FTSchedulePickerObject *pickerObject = [[FTSchedulePickerObject alloc]init];
+        pickerObject.enable = ftPickerView.enable;
+        pickerObject.pickerTime = [dateFormatter dateFromString:ftPickerView.timeTextField.text];
+        
+        [pickerArray addObject:pickerObject];
+    }
+    
+    [pickerArray removeLastObject];
+    
+    if ([_customDelegate respondsToSelector:@selector(getPickerViewArray:)]) {
+        [_customDelegate performSelector:@selector(getPickerViewArray:) withObject:pickerArray];
+    }
 }
 
 #pragma mark - Convertion Methods

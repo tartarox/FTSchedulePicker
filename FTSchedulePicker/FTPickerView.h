@@ -27,5 +27,6 @@
 @property (nonatomic, assign) CGRect startRect;
 @property (nonatomic, strong) id customDelegate;
 @property (nonatomic, assign) int index;
+@property (nonatomic, assign) BOOL enable;
 
 @end
